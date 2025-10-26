@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head-->
+ <head>
+    <meta charset="UTF-8">
+    <meta name = 'viewport' content="width=device-width, initial-scale = 1.0">
+    <title> Homework 3 </title>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 style="color: rgb(255, 0, 183); text-align: center;"> THAT WAS A FAKE BUTTON U PRESSED</h1>
+    <h2 style = 'color: rgb(13, 68, 116); text-align: center; font-family: Allura;'> 
+        Press the Homework 3 button to go back, u might need to scroll down a bit, the correct button is the one labeld Part 2
+    </h2>
+    <h3 style="color: black; font-size: xx-large; font-family: Allura; background-color: bisque;"> 
+        My Name is JJ, short for Jiajie, I am a sophmore at Northeastern, studying Data Science and Business Administration with
+        a concentration in Fintech. I love audiobooks and relaxing It is nice to meet you. I was born in China, my favorite food 
+        is steak, medium rare, New York strip because I'm poor and its easy to cook.    
+    </h3>
+    
+    <h3 style="color: black; font-size: xx-large; font-family: Allura; background-color: bisque;"> 
+        I love you, please don't get mad, its jsut a prank
+    </h3>
+
+
+    <div id = 'Thankyou' style="line-height: 0.1;"> 
+    <h4 style="color: blueviolet; font-size: xx-small; font-family: Jokerman, fantasy; 
+            text-align: right; padding-right: 10%; writing-mode: sideways-lr; transform: rotate(+45deg);
+            ">  
+        Thank you for coming to my Website, especially the TA's this one goes out to you!!!!!! > ) </h4>       
+    </div>
+
+    <script>
+        const Thankyou = document.getElementById('Thankyou')
+        const h4 = Thankyou.querySelector('h4')
+
+        h4.style.display = 'inline';
+
+        for (let i = 0; i < 7; i ++){
+            const clone = h4.cloneNode(true);
+            Thankyou.appendChild(clone)
+        }
+    </script>
+
+  
+    <h1 id="special-heading" style="color: blue; font-family: 'Allura', cursive; margin-left: 90%; writing-mode: vertical-rl;">
+    Hello World!
+    </h1>
+
+        <button id = "navigateButton">homework 3 </button>
+    <script>
+        const navigateButton = document.getElementById('navigateButton')
+        navigateButton.addEventListener('click', function(){
+            window.location.href = 'homework3.html'
+        })
+    </script>
+
+</body>
+
+</html>
